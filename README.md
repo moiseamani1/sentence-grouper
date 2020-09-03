@@ -1,1 +1,1 @@
-# sentence-grouper
+# Sentence Grouper
