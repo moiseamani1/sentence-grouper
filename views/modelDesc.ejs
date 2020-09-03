@@ -1,0 +1,314 @@
+<html>
+
+<head>
+	<title>Sentence Grouper</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/images/favicon.png">
+</head>
+
+<body>
+	
+	<div class="ui  sidebar inverted visible vertical menu" id="sideBarNav">
+		<div class="item">
+			<img src="/images/logo.png">
+		</div>
+		<a class="item"href="/">Grouping Tool</a>
+		<a class="active item"href="/modelDesc">Model Description</a>
+		
+		
+		<div class="ui  labeled icon inverted menu">
+			<a class="item">
+				<i class="github icon"></i>
+			</a>
+			<a class="item" href="https://www.linkedin.com/in/moise-amani-0a6585101">
+				<i class="linkedin icon"></i>
+			</a>
+			
+		</div>
+		
+	</div>
+	
+
+	<!-- Page content -->
+	<div class="content" id="mainContent2">
+		
+		<div class="ui inverted vertical masthead segment" id="mainSegmentDesc">
+			
+			<div class="ui raised very padded text container segment" id="mainSegCont">
+				<h4 class="ui header" id="introHeader">Natural language processing with TensorFlow</h4>
+				
+				<a class="ui label" href="https://www.linkedin.com/in/moise-amani-0a6585101">
+					<i class="user icon"></i>
+					Moise Amani
+				</a>
+				<a class="ui label">
+					<i class="calendar icon"></i>
+					Sep 2020
+				</a>
+				
+				<a class="ui label">
+					<i class="book icon"></i>
+					7 min read
+				</a>
+				
+				<hr>
+				<h2 class="ui sub header">Natural language processing</h2>
+				<p>Natural Language Processing (NLP) is the branch of artificial intelligence that connects computers and humans through the natural language. It is through NLP that computers are able to understand, interpret and manipulate human language.</p>
+				
+				<p>Teaching machines how we communicate is a much more difficult task than we perceive. Although humans find it relatively easy to learn a language, machines find NLP hard to implement due to the ambiguous and imprecise features of natural human languages.</p>
+				
+				
+				<div class="ui container" id="smallScreenShareSC">
+					<div>Share on:</div>
+					<button class="ui circular facebook icon button" onclick="
+					window.open(
+						'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+						'facebook-share-dialog', 
+						'width=626,height=436'); 
+						return false;">
+						<i class="facebook icon"></i>
+					</button>
+					<button class="ui circular twitter icon button" onclick="window.open('http://twitter.com/share?text=Sentence Grouper&url=https://mlcontainerscmedia-zwpov.run-us-west2.goorm.io/modelDesc&hashtags=AI,machinelearning,nlp,datascience','','width=626,height=436');return false;">
+						<i class="twitter icon"></i>
+					</button>
+					<button class="ui circular linkedin icon button" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://mlcontainerscmedia-zwpov.run-us-west2.goorm.io/modelDesc','','width=626,height=436');return false;">
+						<i class="linkedin icon"></i>
+					</button>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+		<div class="ui container" id="wrapContainer">
+			<div class="ui segment" id="secondarySegment">
+				<div class="ui left attached rail">
+					<div class="ui sticky">
+						<div class="ui container  right aligned">
+							<div class="ui vertical buttons" id="secondarySegmentRail">
+								<button id="fbButton" class="ui facebook button" onclick="
+								window.open(
+									'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+									'facebook-share-dialog', 
+									'width=626,height=436'); 
+									return false;">
+									<i class="facebook icon"></i>
+									<span id="fbButtonText">
+										Share on Facebook
+									</span>
+								</button> 
+								<button id="twitterButton" class="ui twitter button" onclick="window.open('http://twitter.com/share?text=Sentence Grouper&url=https://mlcontainerscmedia-zwpov.run-us-west2.goorm.io/modelDesc&hashtags=AI,machinelearning,nlp,datascience','','width=626,height=436');return false;">
+									<i class="twitter icon"></i>
+									<span id="twitterButtonText">
+										Share on Twitter
+									</span>
+								</button>
+								
+								<button id="linkedinButton" class="ui linkedin button" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://mlcontainerscmedia-zwpov.run-us-west2.goorm.io/modelDesc','','width=626,height=436');return false;" >
+									<i class="linkedin icon"></i>
+									<span id="linkedinButtonText">
+										Share on LinkedIn
+									</span>
+								</button>
+								
+								
+							</div>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+					</div>
+					
+					
+					
+				</div>
+				<div class="ui right dividing rail">
+					<div class="ui compact segments">
+						<div class="ui segment">
+							<div class="ui wide skyscraper test ad" data-text="Wide Skyscraper"></div>
+						</div>
+						<div class="ui segment">
+							<div class="ui small rectangle test ad" data-text="Small Rectangle"></div>
+						</div>
+						<div class="ui segment">
+							<div class="ui small rectangle test ad" data-text="Small Rectangle"></div>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="ui text container" >
+						<p>In NLP, tasks are usually realized using two main analysis methods: syntactic analysis and semantic analysis. The syntactic analysis assesses a text’s meaningfulness and attempts to align it with grammatical rules. On the other hand, semantics analysis tries to capture the meaning that is conveyed by the text that syntactic analysis overlooks.</p>
+					<p>As you can probably see, semantic analysis is a bit more difficult than syntactic analysis. That being said, semantic analysis remains one of those unresolved NLP problems.</p>
+
+
+					<h2 class="ui sub header">An application of NLP</h2>
+					<p>I have built a simple sentence grouping online tool with Tensorflow.js. This use case illustrates the typical sentence similarity implementations that are in place when we interact with searches or company chatbots.</p>
+					<span><p>My Sentence Grouper tool is built using the following simple technologies:</p></span>
+					<div class="ui bulleted list" id="stepsList">
+  						<div class="item">Semantic UI</div>
+						<div class="item">ExpressJs and NodeJs</div>
+						<div class="item">Embedded JavaScript Templating (EJS)</div>
+						<div class="item">TensorFlow.js</div>
+						<div class="item">Universal sentence encoder</div>
+					</div>
+					
+				</div>
+				<div class="ui text container" ><p>
+					
+					</p>
+					<h2 class="ui sub header">Design and flow</h2>
+					<p>In terms of user interface, I like using Semantic UI because of its sleek design. Additionally,  it uses classes with meaningful names which are generally easier to learn. Hence, in most cases, using Semantic UI results in more intuitive and quick project development.
+						
+					</p>
+				</div>
+				
+				<div class="ui text centred center aligned container">
+					<img src="/images/dogpic.jpg" class="ui centered medium rounded image">
+					<p id="caption">Cool dog Photo by <span><a target="_blank" href="https://unsplash.com/@lindaseger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="noopener noreferrer">Linda Segerfeldt</a></span> on <span><a href="https://unsplash.com/photos/oEcsvUfCr1c" target="_blank" rel="noopener noreferrer">Unsplash</a></span></p>
+				</div>
+				
+				
+				
+				
+				<div class="ui text container" >	
+					
+					
+					<p>
+						A lot of people are familiar with the MEAN stack for  website development (i.e. MongoDB, ExpressJs, AngularJs, and NodeJs). As it is a relatively small app, my tool uses Express, EJS and Node. Express is simply a light, open-source, and scaleable NodeJs web application framework that is designed to build websites, web applications and API’s much easier. NodeJs is yet another JavaScript library and EJS is a templating engine used by NodeJs.	
+					</p>
+					<h2 class="ui sub header">Understanding Tensorflow</h2>
+					
+					<p>
+					Deep learning is sometimes referenced as a machine learning technique that teaches computers to learn by example. More formally, deep learning is a subset of machine learning that is a collection of algorithms that mimic the structure and function of the brain.	
+					</p>
+					<p>
+						For those who are not familiar with Tensorflow, it is an open-source library created by Google used for deep learning applications. Its architecture’s core functionality is rather straightforward: it acquires data, trains models, creates predictions and, as a result, refines future searches. The Tensorflow library is available in multiple programming languages. It also has a substantial amount of useful documentation and community support.
+					</p>
+					
+					<p>
+					TensorFlow.js is a framework built by Google which bridges machine learning and JavaScript. The framework gives us the ability to implement machine learning models and deploy them on our browsers and Node.js.	
+					</p>
+				</div>
+				<div class="ui text centred center aligned container">
+					<img src="/images/airobot.jpg" class="ui centered medium rounded image">
+					<p id="caption">AI robot Photo by <span><a target="_blank" href="https://unsplash.com/@franckinjapan" rel="noopener noreferrer">Franck V.</a></span> on <span><a href="https://unsplash.com/photos/YKW0JjP7rlU" target="_blank" rel="noopener noreferrer">Unsplash</a></span></p>
+				</div>
+				
+				<div class="ui text container">
+					<p>In my tool, Sentence Grouper, I use Tensorflow.js’s universal sentence encoder package. The package comes with a pre-trained model. <strong id="strong">My first objective is building semantically-useful vectors for each sentence I give the pre-trained model.</strong> Using the package, I am able to produce useful sentence embedding vectors.
+</p>
+				
+					<h2 class="ui sub header">Sentence embedding</h2>
+					<p>
+						Sentence embedding is actually conceptually similar to word embedding. It analyzes whole sentences and lets us understand the context in which words are used. We are able to understand the intention of a sentence without individually calculating the embeddings of each of its words.
+					</p>
+					<p>
+						When using sentence embedding, sentences are placed into an n-dimensional vector space. The embeddings produced contain important features from their predecessor, word embeddings. There are various ways of highlighting the sections of our embeddings that contain key information. For example, we can utilize a technique called Principal Component Analysis (PCA).
+					</p>
+					
+					<p>
+						PCA is a dimensional reduction technique. Using PCA, we find the uniqueness of each embedding and discard similarities amongst the embeddings. I am not going to dive too deep into PCA in this post, but it is important to understand it from a high-level perspective and see how it relates to sentence embedding.
+					</p>
+					
+					<h2 class="ui sub header">Relating vectors through cosine similarity</h2>
+					
+					<p>
+						Cosine similarity measures the similitude between two vectors of an inner product space. It also tells us whether two vectors are pointing in roughly the same direction. We often use cosine similarity in NLP to relate text.
+					</p>
+					
+					<p>
+						Finding the cosine similarity is done by calculating the cosine angle between the two vectors. If the resulting angle of this computation is small, this suggests that the vectors are similar and that we can expect a cosine similarity closer to 1.
+					</p>
+					
+					
+				</div>
+				
+				<div class="ui text centered center aligned container"><img src="/images/cosine.jpg" class="ui centered large rounded image">
+					<p id="caption">Cosine similarity [from <span><a target="_blank" href="https://neo4j.com/docs/graph-algorithms/current/labs-algorithms/cosine/#:~:text=Cosine%20similarity%20is%20the%20cosine,'%20lengths%20(or%20magnitudes)." rel="noopener noreferrer">neo4j</a></span>]</p></div>
+					
+					
+					
+					<div class="ui text container">
+						
+						<p>
+							<strong>In my tool, calculating the cosine similarity is the next step I take after creating my sentence embedding vectors.</strong>
+						</p>
+						
+						<h2 class="ui sub header">Last steps</h2>
+						<p>
+						<strong>Once this is done, I specify a minimum threshold that decides how to group sentences.</strong> As the range of the cosine similarity can only be between 0 and 1, I see using 0.5 as a threshold as the most logical. Sentences with a higher textual similarity than the threshold are grouped together.	
+						</p>
+				
+						<p>Although I used cosine similarity, there are various ways of finding similarity between vectors. For those wanting to know more about this, you can check out:</p>
+						
+						<div class="ui 
+						card" id="linkCard">
+						
+						
+						
+						
+						<div class="content">
+							<div class="ui medium image left floated">
+								<img src="https://i0.wp.com/dataaspirant.com/wp-content/uploads/2015/04/cover_post_final.png?resize=768%2C326&ssl=1" class="visible content">
+							</div>
+						
+								<a href="https://dataaspirant.com/five-most-popular-similarity-measures-implementation-in-python/" target="_blank" rel="noopener noreferrer" class="h2">FIVE MOST POPULAR SIMILARITY MEASURES IMPLEMENTATION IN PYTHON</a>
+								<div class="meta">
+									<span class="date">2015</span>
+								</div>
+							
+							
+						</div>
+						
+						
+						
+						
+					</div>	
+					
+					
+					<p>And finally! After following all of these steps, I came up with the Sentence Grouper tool. You can check out my <span>Github project</span> to see the detailed implementation. Thanks so much for reading!</p>	
+				</div>
+				
+				<div class="ui text container" id="reference">
+					<p>
+						
+					</p>
+					<h2 class="ui sub header">References</h2>
+					
+					<p>
+						[1] Garbade, Dr. Michael. “<span><a target="_blank" href="https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32" rel="noopener noreferrer">A Simple Introduction to Natural Language Processing</a></span>” (2018)
+					</p>
+				
+					<p>
+						[2] ODSC - Open Data Science. “<span><a target="_blank" href="https://medium.com/@ODSC/what-is-tensorflow-13200525e852" rel="noopener noreferrer">What is TensorFlow?</a></span>” (2019)
+					</p>
+					<p>
+						[3] Jaadi, Zakaria. “<span><a target="_blank" href="https://builtin.com/data-science/step-step-explanation-principal-component-analysis" rel="noopener noreferrer">A STEP BY STEP EXPLANATION OF PRINCIPAL COMPONENT ANALYSIS</a></span>” (2019)
+					</p>
+					<p>
+						[4] Saimadhu, Polamuri. “<span><a target="_blank" href="https://dataaspirant.com/five-most-popular-similarity-measures-implementation-in-python/" rel="noopener noreferrer">FIVE MOST POPULAR SIMILARITY MEASURES IMPLEMENTATION IN PYTHON</a></span>” (2015)
+					</p>
+				</div>
+				
+			</div>	
+			
+		</div>
+		
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>	
+	<script src="javascript/my.js"></script>
+</body>
+</html>

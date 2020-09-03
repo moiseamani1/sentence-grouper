@@ -1,0 +1,85 @@
+ <html>
+
+<head>
+	<title>Sentence Grouper</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/images/favicon.png">
+</head>
+
+
+<body>
+	
+	<div class="ui sidebar inverted visible vertical menu" id="sideBarNav">
+		<div class="item">
+			<img src="/images/logo.png">
+		</div>
+		<a class=" active item"href="/">Grouping Tool</a>
+		<a class="item"href="/modelDesc">Model Description</a>
+		
+		
+		<div class="ui  labeled icon inverted menu">
+			<a class="item">
+				<i class="github icon"></i>
+			</a>
+			<a class="item" href="https://www.linkedin.com/in/moise-amani-0a6585101">
+				<i class="linkedin icon"></i>
+			</a>
+			
+		</div>
+		
+	</div>	
+	<div class="content" id="mainContent1">
+		
+		<div class="ui inverted vertical masthead left aligned segment" id="mainSegment">
+			<div class="ui container" id="inputforms">
+				
+				<h1 id="sentencelist">Sentence List</h1>
+				<div class="ui info message" >
+					<i class="close icon" id="messageTip"></i>
+					<div class="header">
+						A few tips
+					</div>
+					<ul class="list">
+						<li>Put your sentences on different lines for the tool to work :)</li>
+						<li>You can specify what threshold you want to use. By default, I have set it to 0.5 but feel free to tweak it to see how it affects the grouping mechanism.</li>
+					</ul>
+				</div>			
+				
+				<form action="/" method="POST">
+					<div class="field" id="threshold">
+						<label>Threshold</label>
+						<input type="number" name="sentencelist[threshold]" value="<%=threshold%>" step="any">
+					</div>		
+					<div class="ui form">
+						<div class="field">
+							
+							<textarea class="" spellcheck="false" name="sentencelist[text]" ><%=listSentences%></textarea>
+						</div>
+						<button class="ui primary button left" type="submit" id="submitButton">Group sentences</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		<div class="ui  centered large leaderboard test ad" id="homeAd" data-text="Large Leaderboard"></div>
+		<div class="ui container" id="groups">
+			<div class="ui centered cards" id="groupsOfCards">
+				<%-result%>	
+				
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>	
+	<script src="javascript/my.js"></script>
+</body>
+</html>

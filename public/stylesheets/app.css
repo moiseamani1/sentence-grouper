@@ -1,0 +1,174 @@
+
+
+html,body{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#mainContent1{margin-left: 15rem;}
+
+
+
+#introHeader{
+	font-size:18pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#mainSegment{
+	
+	background:#0000;
+	background-image:url(/images/background.jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/* #secondarySegmentRail{
+	margin:0!important;
+
+} */
+
+#sentencelist{
+	font-size: 2em;
+	color:#ffffff;
+	text-align:left;
+}
+
+#inputforms{
+	height:auto;
+	padding:20px;
+	margin-top:50px;
+} 
+#threshold{
+	margin-bottom:5px;
+}
+
+
+#submitButton{
+	margin:0!important;
+}
+
+#homeAd{
+	width:100%;
+}
+
+#groups{
+	margin-top:50px;
+	margin-left:0px;
+
+}
+.ui.raised.card:nth-of-type(even){
+	background:#2185d0;
+		
+}
+
+.ui.raised.card:nth-of-type(even) .ui.feed>.event>.content .summary{
+	color:white;
+	
+}
+
+.ui.raised.card:nth-of-type(even) .ui.sub.header{
+	color:white;
+	
+}
+
+.ui.raised.card:nth-of-type(even) .content .header{
+	color:white;
+	
+}
+
+.ui.raised.card:nth-of-type(odd) .ui.feed>.event>.content .summary{
+	color:#2185d0;
+	
+}
+
+.ui.raised.card:nth-of-type(odd) .ui.sub.header{
+	color:#2185d0;
+	
+}
+
+.ui.raised.card:nth-of-type(odd) .content .header{
+	color:#2185d0;
+	
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+#mainContent2{margin-left: 15rem;}
+
+.ui.text.container{
+	font-size:16pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ui[class*="center aligned"].container{
+	margin-top:30px;
+	margin-bottom:30px;
+	
+}
+
+#mainSegmentDesc{
+	background:#0000;
+	background-image:url(/images/background.jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ui.sub.header{
+	margin-bottom:20px;
+}
+#stepsList{
+	margin-bottom:20px;
+}
+#smallScreenShareSC{
+	margin-top:10px;
+	
+}
+
+/* Centering content in the various browsers */
+#wrapContainer{
+
+width: fit-content;
+width:-moz-fit-content;
+	
+}
+/* .................. */
+#caption{
+	font-family: 'Dosis', sans-serif;
+	color:grey;
+	margin-top:10px;
+}
+
+
+#linkCard{
+	width:100%;
+}
+
+
+/* On screens that are less than 700px wide, re-adjust content's margin */
+@media screen and (max-width: 700px) {
+  	#mainContent1 {margin-left: 0;}
+	#mainContent2{margin-left: 0;}
+}
+
+
+.ui.text.container p{
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+}
+
+#reference p{
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	
+}
+
+
+.ui.text.container p strong{
+	font-weight: bold;
+	
+}
+
+
+
