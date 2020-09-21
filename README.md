@@ -13,5 +13,5 @@ I have built a simple sentence grouping online tool with Tensorflow.js. This use
 * Universal sentence encoder
 
 
-Website: [sentencegrouper.ca](sentencegrouper.ca)
+Website: [sentencegrouper.ca](http://www.sentencegrouper.ca/)
 					
